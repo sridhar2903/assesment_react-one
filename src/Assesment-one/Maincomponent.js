@@ -1,6 +1,6 @@
 import React from 'react'
 import { Functioncomponent,Classcomponent } from './Funclass';
-import './style.css'
+
 
 
 class Maincomponent extends React.Component{
@@ -34,8 +34,8 @@ render (){
           <button id="cpara" onClick={this.gotoclass}>To see Styling using Class Component</button>
        
            <div class="flex">
-         <div class="fun">{this.state.Showfuncomponent&&<Functioncomponent/>}</div>
-          <div class="class">{this.state.Showclasscomponent&&<Classcomponent/>}</div>
+         {this.state.Showfuncomponent&&<Functioncomponent/>}
+         {this.state.Showclasscomponent&&<Classcomponent/>}
           </div>
       </>
     )
